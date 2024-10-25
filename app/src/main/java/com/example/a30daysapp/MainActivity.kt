@@ -1,11 +1,10 @@
-package com.example.catbreedapp
+package com.example.a30daysapp
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.example.a30daysapp.CatBreed
-import com.example.a30daysapp.R
+import com.example.a30daysapp.adapter.CatBreedAdapter
 
 class MainActivity : AppCompatActivity() {
     private lateinit var recyclerView: RecyclerView
@@ -18,15 +17,15 @@ class MainActivity : AppCompatActivity() {
         CatBreed(3, "Birman", R.drawable.birman, "A gentle giant with long, silky hair and striking blue eyes.", tips = "Spay or Neuter: Prevent unwanted litters and behavioral issues."),
         CatBreed(4, "Bombay", R.drawable.bombay, "A sleek, black cat with a shiny coat and a sweet, affectionate personality.", tips = "Quality Diet: Choose a balanced diet suitable for your cat's age and activity level."),
         CatBreed(5, "British Shorthair", R.drawable.british_shorthair, "A sturdy, round-faced cat with a calm and docile temperament.", tips = "Fresh Water: Provide clean, fresh water daily."),
-        CatBreed(6, "Burmese", R.drawable.burmese, "A social, intelligent cat with a short, glossy coat and expressive eyes.", tips = "gsdhgsadghjs"),
-        CatBreed(7, "Chartreux", R.drawable.chartreux, "A natural mouser with a dense, blue-gray coat and a quiet, gentle nature.   ", tips = "gsdhgsadghjs"),
-        CatBreed(8, "Cornish Rex", R.drawable.cornish_rex, "A rare breed with a curly, hairless coat and a playful, mischievous personality.", tips = "gsdhgsadghjs"),
-        CatBreed(9, "Devon Rex", R.drawable.devon_rex, "Another curly-haired breed with large ears and a friendly, affectionate nature.", tips = "gsdhgsadghjs"),
-        CatBreed(10, "Egyptian Mau", R.drawable.egyptian_mau, "The oldest domesticated cat breed, known for its distinctive spotted coat and athletic build.", tips = "gsdhgsadghjs"),
-        CatBreed(11, "Himalayan", R.drawable.himalayan, "A colorpoint cat with a long, silky coat and a sweet, gentle personality.", tips = "gsdhgsadghjs"),
-        CatBreed(12, "Japanese Bobtail", R.drawable.japanese_bobtail, "A unique breed with a short, bobbed tail and a playful, dog-like personality.", tips = "gsdhgsadghjs"),
-        CatBreed(13, "Maine Coon", R.drawable.maine_coon, "The largest domesticated cat breed, known for its long, flowing coat and friendly, outgoing nature.", tips = "gsdhgsadghjs"),
-        CatBreed(14, "Manx", R.drawable.manx, "A tailless or stub-tailed cat with a playful, energetic personality.", tips = "gsdhgsadghjs"),
+        CatBreed(6, "Burmese", R.drawable.burmese, "A social, intelligent cat with a short, glossy coat and expressive eyes.", tips = "Litter Box Hygiene: Keep the litter box clean and scoop daily."),
+        CatBreed(7, "Chartreux", R.drawable.chartreux, "A natural mouser with a dense, blue-gray coat and a quiet, gentle nature.   ", tips = "Dental Care: Brush your cat's teeth regularly or use dental treats."),
+        CatBreed(8, "Cornish Rex", R.drawable.cornish_rex, "A rare breed with a curly, hairless coat and a playful, mischievous personality.", tips = "Indoor Safety: Cat-proof your home to avoid accidents."),
+        CatBreed(9, "Devon Rex", R.drawable.devon_rex, "Another curly-haired breed with large ears and a friendly, affectionate nature.", tips = "Outdoor Safety: If your cat goes outdoors, consider microchipping and keeping them indoors at night."),
+        CatBreed(10, "Egyptian Mau", R.drawable.egyptian_mau, "The oldest domesticated cat breed, known for its distinctive spotted coat and athletic build.", tips = "Grooming: Brush regularly, especially long-haired breeds."),
+        CatBreed(11, "Himalayan", R.drawable.himalayan, "A colorpoint cat with a long, silky coat and a sweet, gentle personality.", tips = "Playtime: Engage in interactive play sessions daily"),
+        CatBreed(12, "Japanese Bobtail", R.drawable.japanese_bobtail, "A unique breed with a short, bobbed tail and a playful, dog-like personality.", tips = "Scratching Posts: Provide plenty of scratching posts to protect furniture."),
+        CatBreed(13, "Maine Coon", R.drawable.maine_coon, "The largest domesticated cat breed, known for its long, flowing coat and friendly, outgoing nature.", tips = "Perches and Hiding Spots: Offer vertical spaces for climbing and napping."),
+        CatBreed(14, "Manx", R.drawable.manx, "A tailless or stub-tailed cat with a playful, energetic personality.", tips = "Mental Stimulation: Use puzzle feeders and interactive toys."),
         CatBreed(15, "Persian", R.drawable.persian, "A long-haired cat with a sweet, gentle personality and a luxurious coat.", tips = "gsdhgsadghjs"),
         CatBreed(16, "Ragdoll", R.drawable.ragdoll, "A large, docile cat known for its floppy limbs and affectionate nature.", tips = "gsdhgsadghjs"),
         CatBreed(17, "Russian Blue", R.drawable.russian_blue, "A sleek, blue-gray cat with a quiet, gentle personality..", tips = "gsdhgsadghjs"),

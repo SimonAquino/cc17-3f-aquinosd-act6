@@ -1,4 +1,4 @@
-package com.example.catbreedapp
+package com.example.a30daysapp.adapter
 
 import android.view.LayoutInflater
 import android.view.View
